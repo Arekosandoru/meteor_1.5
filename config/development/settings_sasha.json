@@ -1,0 +1,32 @@
+{
+  "public": {
+    "dazl": {
+      "apiServer": "https://192.168.0.42:8000",
+      "user": "ab@ab.com",
+      "password": "123123",
+      "selfServer": "https://192.168.0.42:10000"
+    }
+  },
+  "private": {
+    "oAuth": {
+      "facebook": {
+        "appId": "",
+        "secret": ""
+      },
+      "google": {
+        "clientId": "",
+        "secret": ""
+      },
+      "twitter": {
+        "consumerKey": "",
+        "secret": ""
+      }
+    },
+    "dazl": {
+      "apiServer": "https://192.168.0.42:8000",
+      "user": "ab@ab.com",
+      "password": "123123",
+      "selfServer": "https://192.168.0.42:10000"
+    }
+  }
+}

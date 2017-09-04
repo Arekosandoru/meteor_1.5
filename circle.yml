@@ -1,0 +1,10 @@
+machine:
+  node:
+    version: 0.10.40
+dependencies:
+  override:
+    - curl https://install.meteor.com | /bin/sh
+    - npm install
+test:
+  override:
+    - npm run test

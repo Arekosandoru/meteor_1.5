@@ -1,0 +1,1 @@
+//SSL('/samba/secured/gidr/PROJECT_NAME/private/key.txt','/samba/secured/gidr/PROJECT_NAME/private/crt.txt', 10000);

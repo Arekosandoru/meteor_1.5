@@ -1,0 +1,32 @@
+{
+  "public": {
+    "dazl": {
+      "apiServer": "https://192.168.3.9:8000",
+      "user": "test@test.com",
+      "password": "123456",
+      "selfServer": "https://server1:10000"
+    }
+  },
+  "private": {
+    "oAuth": {
+      "facebook": {
+        "appId": "",
+        "secret": ""
+      },
+      "google": {
+        "clientId": "",
+        "secret": ""
+      },
+      "twitter": {
+        "consumerKey": "",
+        "secret": ""
+      }
+    },
+    "dazl": {
+      "apiServer": "https://192.168.3.9:8000",
+      "user": "test@test.com",
+      "password": "123456",
+      "selfServer": "https://server1:10000"
+    }
+  }
+}
