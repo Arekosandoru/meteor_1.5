@@ -5,9 +5,9 @@ Meteor.publish('examples.all', function() {
   return Examples.find();
 });
 
-Meteor.publish('examples.one', function(churchId) {
+Meteor.publish('examples.one', function(paramId) {
   return Examples.find({
-    _id: churchId 
+    _id: paramId 
   });
 });
 

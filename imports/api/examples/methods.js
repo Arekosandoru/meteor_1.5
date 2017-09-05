@@ -46,7 +46,7 @@ const removeExample = new ValidatedMethod({
   },
 });
 
-const CHURCH_METHODS = _.pluck([
+const CURRENT_METHODS = _.pluck([
   insertExample,
   updateExample,
   removeExample,
@@ -55,7 +55,7 @@ const CHURCH_METHODS = _.pluck([
 if (Meteor.isServer) {
   DDPRateLimiter.addRule({
     name(name) {
-      return _.contains(CHURCH_METHODS, name);
+      return _.contains(CURRENT_METHODS, name);
     },
 
     connectionId() {

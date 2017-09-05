@@ -6,33 +6,33 @@
 // import { Random } from 'meteor/random';
 
 import { Meteor } from 'meteor/meteor';
-import { Examples } from './examples.js';
+// import { Examples } from './examples.js';
 // import { insertPost, updatePost, removePost } from './methods.js';
 
-if (Meteor.isServer) {
-  describe('Examples', () => {
-    describe('methods', () => {
-      beforeEach(() => {
-        Examples.remove({});
-      });
+// if (Meteor.isServer) {
+//   describe('Examples', () => {
+//     describe('methods', () => {
+//       beforeEach(() => {
+//         Examples.remove({});
+//       });
 
-      describe('Insert', () => {
-        it('Should insert a example', () => {
-          return true;
-        });
-      });
+//       describe('Insert', () => {
+//         it('Should insert a example', () => {
+//           return true;
+//         });
+//       });
 
-      describe('Update', () => {
-        it('Should update a example', () => {
-          return true;
-        });
-      });
+//       describe('Update', () => {
+//         it('Should update a example', () => {
+//           return true;
+//         });
+//       });
 
-      describe('Remove', () => {
-        it('Should delete a example', () => {
-          return true;
-        });
-      });
-    });
-  });
-}
+//       describe('Remove', () => {
+//         it('Should delete a example', () => {
+//           return true;
+//         });
+//       });
+//     });
+//   });
+// }

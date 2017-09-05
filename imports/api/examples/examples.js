@@ -48,10 +48,10 @@ Examples.attachSchema(Examples.schema);
 
 
 Examples.methods({
-  create_example: function() {
+  create_example: function(param) {
     const user = Meteor.user();
 		if (user) {
-      if (title && description && address && beliefs) {
+      if (param) {
         const example = {
           createdBy: user._id,
           createdAt: new Date(),
