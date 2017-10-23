@@ -28,8 +28,8 @@ Examples.allow({
 
 Examples.schema = new SimpleSchema({
   _id: { 
-		type: String
-	},
+    type: String
+  },
   createdBy: {
     type: String,
     optional: true
@@ -39,9 +39,9 @@ Examples.schema = new SimpleSchema({
     defaultValue: new Date()
   },
   isDeleted: {
-		type: Boolean,
-		defaultValue: false
-	}
+    type: Boolean,
+    defaultValue: false
+  }
 });
 
 Examples.attachSchema(Examples.schema);
@@ -50,7 +50,7 @@ Examples.attachSchema(Examples.schema);
 Examples.methods({
   create_example: function(param) {
     const user = Meteor.user();
-		if (user) {
+    if (user) {
       if (param) {
         const example = {
           createdBy: user._id,
@@ -58,21 +58,21 @@ Examples.methods({
         };
         return Examples.insert(example);  
       }
-		} else {
-			throw new Meteor.Error(500, 'You are not authorized to add Examples.');
-		}       
-	},
-	update_example_field: function(exampleId, fieldName, fieldValue) {
-		let data = {};
-		data[fieldName] = fieldValue;
+    } else {
+      throw new Meteor.Error(500, 'You are not authorized to add Examples.');
+    }       
+  },
+  update_example_field: function(exampleId, fieldName, fieldValue) {
+    let data = {};
+    data[fieldName] = fieldValue;
 
-		Examples.update({ _id: exampleId }, { $set: data });
-	},
-	add_element_to_field_array: function(exampleId, fieldName, value) {
-		let data = {};
-		data[fieldName] = value;
+    Examples.update({ _id: exampleId }, { $set: data });
+  },
+  add_element_to_field_array: function(exampleId, fieldName, value) {
+    let data = {};
+    data[fieldName] = value;
 
-		Examples.update({ _id: exampleId }, { $push: data });
+    Examples.update({ _id: exampleId }, { $push: data });
   },
   deleteRestoreExample: function(exampleId, state) {
     Examples.update({ 
@@ -84,9 +84,9 @@ Examples.methods({
 });
 
 if (Meteor.isServer) {
-	Meteor.methods({
-		
-	});
+  Meteor.methods({
+    
+  });
 }
 
 export { Examples };

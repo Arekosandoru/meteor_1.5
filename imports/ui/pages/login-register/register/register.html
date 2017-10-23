@@ -1,0 +1,46 @@
+<template name="register">
+	<div class="register-wrapper">
+		{{> sAlert}}
+
+		<div class="ui middle center aligned grid">
+			<div class="column login-form-wrapper">
+				<h2 class="ui image header">
+					<div class="content">{{_ "text.createAcount"}}</div>
+				</h2>
+
+				<form class="ui large form">
+					<div class="ui stacked secondary  segment">
+						<div class="field">
+							<div class="ui left icon input">
+								<i class="user icon"></i>
+								<input id="email_field" type="text" name="email" placeholder='{{_ "text.email"}}' />
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="ui left icon input">
+								<i class="lock icon"></i>
+								<input id="password_field" type="password" name="password" placeholder='{{_ "text.password"}}' />
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="ui left icon input">
+								<i class="lock icon"></i>
+								<input id="password_field_again" type="password" name="password" placeholder='{{_ "text.passwordAgain"}}' />
+							</div>
+						</div>
+
+						<button id="register_btn" class="ui fluid large teal submit button">{{_ "text.createAcount"}}</button>
+					</div>
+
+					<div class="ui error message"></div>
+				</form>
+
+				<div class="ui message">
+					{{_ "text.alreadyHaveAccount"}} <a href="/signin">{{_ "text.signInButton"}}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

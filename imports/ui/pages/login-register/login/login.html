@@ -1,0 +1,63 @@
+<template name="login">
+	<div class="login-wrapper">
+		{{> sAlert}}
+
+		<div class="ui middle aligned center grid no-t-margin">
+			<div class="column login-form-wrapper">
+				<h2 class="ui image header">
+					<div class="content">{{_ "text.signInButton"}}</div>
+				</h2>
+
+				<form class="ui large form">
+					<div class="ui stacked secondary  segment">
+						<div class="row">
+							<div class="col s12">
+								<a id="login_with_facebook" class="button" href="#">
+									<img src="/images/facebook-box.png" class="login-social-icon" />
+							  	</a>
+
+							  	<a id="login_with_vk" class="button" href="#">
+									<img src="/images/vk-box.png" class="login-social-icon" />
+							  	</a>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="ui left icon input">
+								<i class="user icon"></i>
+								<input id="email_field" type="text" name="email" placeholder='{{_ "text.email"}}' />
+							</div>
+						</div>
+						<div class="field">
+							<div class="ui left icon input">
+								<i class="lock icon"></i>
+								<input id="password_field" type="password" name="password" placeholder='{{_ "text.password"}}' />
+							</div>
+							<br />
+							<br />
+
+							<p>
+								<a href="/recover-password">{{_ "text.forgotPassword"}}</a>
+							</p>
+						</div>
+
+						<button id="login_in_btn" class="ui fluid large teal submit button">{{_ "text.signInButton"}}</button>
+					</div>
+
+					<div class="ui error message"></div>
+				</form>
+
+				<div class="ui message">
+					Do not have account? <a href="/register">{{_ "text.register"}}</a>
+				</div>
+			</div>
+		</div>
+		<div class="ui container">
+			<div class="ui grid no-t-margin">
+				<div class="sixteen wide column">
+	                <img class="ab-logo big-login-logo" src="/images/logo.png" />
+	            </div>
+			</div>
+		</div>
+	</div>
+</template>

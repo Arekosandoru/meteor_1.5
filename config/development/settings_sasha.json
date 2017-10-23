@@ -1,17 +1,64 @@
 {
   "public": {
     "dazl": {
-      "apiServer": "https://192.168.0.42:8000",
-      "user": "ab@ab.com",
-      "password": "123123",
-      "selfServer": "https://192.168.0.42:10000"
+      "apiServer": "https://dazlme-server-shaunst.c9users.io",
+      "selfServer": "https://sashalocal.gidr.io:10000",
+      "kt": "wss://sashalocal.gidr.io:8890/kurento-tree",
+      "kthttps": "https://sashalocal.gidr.io:8890/kurento-tree"
+    },
+    "google": {
+      "key": "AIzaSyA99A46G4GkDVS5Cbsyext1TNEMTtbgi5Q"
+    },
+    "recording": {
+      "playbackMediaServer": "ws://sashalocal.gidr.io:8888/kurento",
+      "fileProtocol": "file://",
+      "fileDirectory": "/home/are/record/",
+      "fileExtension": "webm",
+      "playUrl": "https://play.gidr.io/"
+    },
+    "constraints": {
+        "video":{
+            "width": { "min": 640 , "ideal": 1920},
+            "height": { "min": 480 },
+            "frameRate": 30
+        },
+        "audio": true
+    },
+    "bandwidth": {
+      "video": {
+        "send": 8000,
+        "recv": 8000
+      },
+      "audio": 8000
+    },
+    "socketServer": {
+      "server": "https://sashalocal.gidr.io",
+      "port": "3005",
+      "secure": "false",
+      "selfSubId": "meteor"
+    },
+    "plans": [
+      {
+        "id": "1-personal-monthly-plan",
+        "name": "1 plan - $ 9.99 monthly",
+        "amount": 999
+      },
+      {
+        "id": "2-monthly-plan",
+        "name": "3 plan - $ 49.99 monthly",
+        "amount": 4999
+      }
+    ],
+    "mobileDev": false,
+    "analyticsSettings": {
+      "Google Analytics" : {"trackingId": "UA-106861910-1"}
     }
   },
   "private": {
     "oAuth": {
       "facebook": {
-        "appId": "",
-        "secret": ""
+        "appId": "146001559468362",
+        "secret": "4f7dca3a012767cfed740acf59d3ad0f"
       },
       "google": {
         "clientId": "",
@@ -20,13 +67,34 @@
       "twitter": {
         "consumerKey": "",
         "secret": ""
+      },
+      "vk": {
+        "appId": "6222229",
+        "secret": "RUXxjMe9byuJGfhCp13C"
       }
     },
     "dazl": {
-      "apiServer": "https://192.168.0.42:8000",
+      "apiServer": "https://dazlme-server-shaunst.c9users.io",
       "user": "ab@ab.com",
       "password": "123123",
-      "selfServer": "https://192.168.0.42:10000"
-    }
-  }
+      "selfServer": "https://sashalocal.gidr.io:10000",
+      "ssl": true,
+      "ca": "/samba/secured/private/domain_validated.ca-bundle",
+      "key": "/samba/secured/private/star.gidr.io.key",
+      "crt": "/samba/secured/private/star.gidr.io.crt"
+    },
+    "stripeSecretKey": "sk_test_MwNlQKpbl19ycm02FJ8IwT7K",
+    "AWSAccessKeyId": "AKIAJLXLQTMB6XGVS5ZQ",
+    "AWSSecretAccessKey": "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",
+    "bucketName": "gosportzcoreassets",
+    "regionName": "us-east-1"
+  },
+  "S3Bucket": "gosportzcoreassets",
+  "awsAccessKeyId": "AKIAJLXLQTMB6XGVS5ZQ",
+  "awsSecretKey": "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",
+  "region": "us-east-1",
+  "AWSAccessKeyId": "AKIAJLXLQTMB6XGVS5ZQ",
+  "AWSSecretAccessKey": "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",
+  "bucketName": "gosportzcoreassets",
+  "regionName": "us-east-1"
 }

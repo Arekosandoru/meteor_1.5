@@ -1,18 +1,12 @@
 <template name="App_navHeader">
     <div class="ui text menu header-block">
         <div class="item logo"><a href="/"><img src="/images/logo.png" alt="anchor logo"></a></div>
-        <div class="item logo"><a href="/">APP NAME</a></div>
-        <div class="right menu">
-            <!-- <div class="item"><a href="/search"><i class="search icon"></i></a></div> -->
-            <div class="item"><a href="/">1</a></div>
-            <div class="item"><a href="/">2</a></div>
-            <div class="item"><a href="/">3</a></div>
-            <div class="item"><a href="/">4</a></div>
-            
+        <div class="item logo"><a href="/">App name</a></div>
+        <div class="right menu">           
             {{#if currentUser}}
               <div class="item"><a class="mini ui teal button sign-up js-logout">{{_ 'Logout'}}</a></div>
             {{else}}
-              <div class="item"><a class="mini ui teal button sign-up" href="{{pathFor 'join'}}">Sign Up</a></div>
+              <div class="item"><a class="mini ui teal button sign-up" href="/signin">Sign Up</a></div>
             {{/if}}
         </div>
     </div>
