@@ -17,7 +17,7 @@
     "http-proxy": "^1.16.2",
     "imap": "^0.8.19",
     "kurento-client": "^6.6.0",
-    "lodash": "4.12.0",
+    "lodash": "4.17.21",
     "meteor-node-stubs": "^0.3.2",
     "moment": "2.13.0",
     "socket.io-client": "^2.0.4"
